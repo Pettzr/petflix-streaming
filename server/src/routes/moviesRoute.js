@@ -4,7 +4,7 @@ const router = express.Router();
 const authenticateUser = require('../middlewares/authenticateUser');
 
 
-router.post('/enviarFilme', postMovieController)
+//router.post('/enviarFilme', postMovieController)
 router.get('/filmes', getAllMoviesController)
 router.get('/filmes/title/:slug', getMovieByTitleController)
 router.get('/filmes/genre/:genre', getMoviesByGenreController)
