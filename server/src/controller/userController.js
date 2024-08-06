@@ -2,8 +2,6 @@ const {createUserService, loginUserService, addRemoveMovieToWatchService, addRem
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
-const secret = process.env.SECRET_JWT;
-
 async function createUserController(req, res) {
 
     try{
@@ -25,7 +23,7 @@ async function loginUserController (req, res) {
         const filteredUserName = userName.trim();
         const user = await loginUserService(filteredUserName, password)
 
-        const token = jwt.sign({id: user.id}, secret, {expiresIn: "10h"})
+        const token = jwt.sign({id: user.id}, process.env.SECRET_JWT, {expiresIn: "10h"})
 
         res.cookie('token', token, {
             httpOnly: true,
