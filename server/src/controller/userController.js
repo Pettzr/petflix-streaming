@@ -27,7 +27,7 @@ async function loginUserController (req, res) {
 
         res.cookie('token', token, {
             httpOnly: true,
-            secure: true,
+            secure: false,
             sameSite: 'none',
             maxAge: 36000000,
         })
@@ -43,7 +43,7 @@ async function logoutUserController(req, res) {
     try{
         res.clearCookie('token', {
             httpOnly: true,
-            secure: true,
+            secure: false,
             sameSite: 'none',
         })
         res.status(200).json({message: 'Usuário deslogado com sucesso'})
