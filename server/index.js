@@ -3,7 +3,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
 const path = require('path');
-const router = require('./src/routes/index.js')
+const router = require('./src/routes/index.js');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 require('dotenv').config();
 
 PORT = 5000
@@ -25,6 +26,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/images', express.static(path.join(__dirname, 'assets' )))
+
+app.use('/api', createProxyMiddleware({
+    target: process.env.BACKEND_URL,
+    changeOrigin: true,
+    pathRewrite: {
+        '^/api': '',
+    },
+    onProxyReq: function (proxyReq, req, res) {
+        proxyReq.setHeader('Host', BACKEND_DOMAIN);
+    }
+}));
 
 app.use('/', router)
 
