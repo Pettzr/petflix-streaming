@@ -27,16 +27,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/images', express.static(path.join(__dirname, 'assets' )))
 
-app.use('/api', createProxyMiddleware({
-    target: process.env.BACKEND_URL,
-    changeOrigin: true,
-    pathRewrite: {
-        '^/api': '',
-    },
-    onProxyReq: function (proxyReq, req, res) {
-        proxyReq.setHeader('Host', BACKEND_DOMAIN);
-    }
-}));
 
 app.use('/', router)
 
