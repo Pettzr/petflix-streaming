@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+        "source": "/api/(.*)",
+        "destination": "https://petflix-streaming-api.vercel.app/api/$1"
+        }
+    ]
+}
