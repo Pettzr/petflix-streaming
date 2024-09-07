@@ -1,6 +1,6 @@
-# Projeto FullStack com JavaScript, React, Express e MongoDB (MERN)
+# 🎬 Projeto FullStack com JavaScript, React, Express e MongoDB (MERN)
 
-## Descrição
+## ✏️ Descrição
 
   
 O projeto simula um site de Streaming de Filmes (como Netflix e Amazon Prime).
@@ -12,13 +12,13 @@ O site é 100% funcional, com funções de cadastro e login, adição e remoçã
 >
 >Quanto ao botão de play, por não possuir os direitos autorais dos filmes, não é possível colocar o filme para reprodução. A idéia do site é demonstrar funções complexas e simular um site de filmes.
 
-## Acesse o Site
+## 🌐 Acesse o Site
 
 Explore o site diretamente no link abaixo. O site está 100% funcional e você pode testar todas as funcionalidades sem precisar configurar nada localmente.
 
 🔗 [Visite Petflix Streaming](https://petflix-streaming.vercel.app)
 
-## Rodando Localmente
+## 🚀 Rodando Localmente
 
 Para rodar o projeto localmente, é necessário configurar um ambiente com MongoDB Atlas e definir as variáveis de ambiente no arquivo `.env`. Devido à complexidade dessas configurações, recomendamos que utilize a versão online para explorar todas as funcionalidades.
 
@@ -42,7 +42,7 @@ Caso deseje configurar localmente, é necessário:
     
 _______________________________________________________________________________________________________________________________
 
-# Principais Páginas do Site
+# 🖥️ Principais Páginas do Site
 
 ## Cabeçalho e Rodapé (Header e Footer)
 
@@ -60,7 +60,7 @@ O rodapé é um pouco mais simples que o cabeçalho. Possui Links que te redirec
 
 <br>
 
-## Home
+## 🏠 Home
 
 ![Home](https://github.com/user-attachments/assets/a40693b6-864e-44c0-8bbe-83641559c3eb)
 
@@ -94,7 +94,7 @@ Cada botão possuí um gênero de filme, ao clicar em um gênero específico uma
 
 <br>
 
-## Filmes
+## 🎥 Filmes
 
 ![filmes](https://github.com/user-attachments/assets/66e08f4e-fb00-4e1f-8a6b-5e6de2e5c8cf)
 
@@ -115,7 +115,10 @@ Os botões de favoritos ou assistir mais tarde servem para colocar o filme no pe
 
 <br>
 
-## Login e Registro
+## 🔐 Login e Registro
+
+![login-registro](https://github.com/user-attachments/assets/f67a39a1-70d6-4dd3-add7-34c7d746d16f)
+
 
 > #### https://petflix-streaming.vercel.app/login-registro
 
@@ -138,7 +141,10 @@ Ao escolher sua senha haverá uma série de requisitos mínimos que foram coloca
 
 <br>
 
-## Perfil
+## 👤 Perfil
+
+![perfil](https://github.com/user-attachments/assets/70ae691d-28ff-4366-8f9a-e2722880679e)
+
 
 > #### https://petflix-streaming.vercel.app/perfil
 
@@ -160,7 +166,7 @@ A função de histórico adiciona filmes na sessão a medida que você clica em 
 
 _______________________________________________________
 
-## Expêriencia e Aprendizado
+## 📚 Expêriencia e Aprendizado
 
 Com esse projeto foi possível aprender e praticar o uso de diversas ferramentas e bibliotecas. Também foi possível pôr em prática anos de estudo e explorar o javascript, o html e o css com o uso do styledcomponents.
 
