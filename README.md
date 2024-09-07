@@ -11,6 +11,34 @@ O site é 100% funcional, com funções de cadastro e login, adição e remoçã
 > ## Observação
 >
 >Quanto ao botão de play, por não possuir os direitos autorais dos filmes, não é possível colocar o filme para reprodução. A idéia do site é demonstrar funções complexas e simular um site de filmes.
+
+## Acesse o Site
+
+Explore o site diretamente no link abaixo. O site está 100% funcional e você pode testar todas as funcionalidades sem precisar configurar nada localmente.
+
+🔗 [Visite Petflix Streaming](https://petflix-streaming.vercel.app)
+
+## Rodando Localmente
+
+Para rodar o projeto localmente, é necessário configurar um ambiente com MongoDB Atlas e definir as variáveis de ambiente no arquivo `.env`. Devido à complexidade dessas configurações, recomendamos que utilize a versão online para explorar todas as funcionalidades.
+
+Caso deseje configurar localmente, é necessário:
+
+1. Criar uma conta no [MongoDB Atlas](https://www.mongodb.com/atlas/database).
+2. Configurar as variáveis de ambiente no arquivo `.env`:
+   - **Backend:**
+     - `BACKEND_DOMAIN`: Domínio do backend (Development, Preview, Production).
+     - `BACKEND_URL`: URL do backend (Development, Preview, Production).
+     - `DB_CONNECT`: String de conexão com o MongoDB Atlas.
+     - `SECRET_JWT`: Segredo utilizado para a geração de tokens JWT.
+     - `CORS_URL`: URL permitida pelo CORS (Development, Preview, Production).
+   - **Frontend:**
+     - `REACT_APP_AXIOS_URL`: URL base utilizada pelo Axios para fazer requisições ao backend.
+
+3. Instalar as dependências com `npm install`.
+4. Iniciar o servidor com `npm start`.
+
+> **Nota**: O suporte para configuração local é limitado e é voltado para usuários com experiência na configuração de ambientes Node.js e MongoDB.
     
 _______________________________________________________________________________________________________________________________
 
@@ -33,6 +61,9 @@ O rodapé é um pouco mais simples que o cabeçalho. Possui Links que te redirec
 <br>
 
 ## Home
+
+![Home](https://github.com/user-attachments/assets/a40693b6-864e-44c0-8bbe-83641559c3eb)
+
 
 > #### https://petflix-streaming.vercel.app/
 
@@ -64,6 +95,9 @@ Cada botão possuí um gênero de filme, ao clicar em um gênero específico uma
 <br>
 
 ## Filmes
+
+![filmes](https://github.com/user-attachments/assets/66e08f4e-fb00-4e1f-8a6b-5e6de2e5c8cf)
+
 
 > #### https://petflix-streaming.vercel.app/filme/{nome-do-filme}
 
